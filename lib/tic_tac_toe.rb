@@ -37,8 +37,8 @@ end
 
 #def move(board, index, current_player = "X")
 def move(board, index, current_player)
-  #board[index] = current_player
-  board[index] = current_player(board)
+  board[index] = current_player
+  #board[index] = current_player(board)
 end
 
 def position_taken?(board, location)
