@@ -3,7 +3,7 @@ def play(board)
     turn(board)
     if draw?(board)
       break
-    end 
+    end
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
