@@ -1,7 +1,7 @@
 def play(board)
   until over?(board)
-    turn(board) 
-  end 
+    turn(board)
+  end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
@@ -35,8 +35,8 @@ def input_to_index(user_input)
 end
 
 def move(board, index, current_player = "X")
-#def move(board, index, current_player) 
-  #board[index] = current_player 
+#def move(board, index, current_player)
+  #board[index] = current_player
   board[index] = current_player(board)
 end
 
